@@ -49,6 +49,22 @@
 
     combos { compatible = "zmk,combos"; };
 
+    macros {
+        macro1: macro1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp L &kp E &kp A &kp N &kp G &kp H &kp O &kp U &kp N &kp AT &kp G &kp M &kp A &kp I &kp L &kp DOT &kp C &kp O &kp M>;
+            label = "MACRO1";
+        };
+
+        macro2: macro2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp H &kp A &kp N &kp N &kp A &kp H &kp LPAR &kp N2 &kp N8 &kp RPAR &kp LS(M) &kp A &kp Y>;
+            label = "MACRO2";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -75,10 +91,10 @@
         Sym {
             display-name = "Sym";
             bindings = <
-        &kp EXCL  &kp AT  &kp HASH  &kp DOLLAR  &kp PERCENT    &kp CARET  &kp AMPERSAND  &kp KP_ASTERISK  &kp LPAR  &kp RPAR
-        &trans    &trans  &trans    &trans      &trans         &trans     &trans         &trans           &kp LBKT  &kp RIGHT_BRACKET
-&trans  &trans    &trans  &trans    &trans      &trans         &kp MINUS  &kp EQUAL      &trans           &trans    &kp BACKSLASH      &kp GRAVE
-                          &trans    &trans      &trans         &trans     &trans         &trans
+        &kp EXCL  &kp AT   &kp HASH  &kp DOLLAR  &kp PERCENT    &kp CARET  &kp AMPERSAND  &kp KP_ASTERISK  &kp LPAR  &kp RPAR
+        &trans    &trans   &trans    &trans      &trans         &trans     &trans         &trans           &kp LBKT  &kp RIGHT_BRACKET
+&trans  &macro1   &macro2  &trans    &trans      &trans         &kp MINUS  &kp EQUAL      &trans           &trans    &kp BACKSLASH      &kp GRAVE
+                           &trans    &trans      &trans         &trans     &trans         &trans
             >;
         };
 

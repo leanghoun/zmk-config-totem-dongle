@@ -88,7 +88,7 @@
         &bootloader  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
         &trans       &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
 &trans  &trans       &trans  &trans  &trans  &trans    &trans  &trans  &trans  &to 4   &trans  &trans
-                             &trans  &trans  &trans    &trans  &trans  &trans
+                             &trans  &trans  &kp N3    &trans  &trans  &trans
             >;
         };
 
@@ -98,7 +98,7 @@
         &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
         &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &to 0   &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+                        &trans  &trans  &kp N4    &trans  &trans  &trans
             >;
         };
     };
